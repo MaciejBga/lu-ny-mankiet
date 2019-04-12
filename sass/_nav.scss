@@ -1,0 +1,62 @@
+nav {
+    position: fixed;
+    color: $color-font-odd;
+    z-index: 3;
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100vw;
+        height: 6vh;
+        margin-top: 3vh;
+
+        .logo {
+            height: 12vh;
+            width: 12vh;
+            box-shadow: 0 0 1px 6px rgba(0, 0, 0, .9);
+            border-radius: 50%;
+            background-image: url(/img/logo.jpg);
+            background-position: center;
+            background-size: cover;
+            transform: translateY(-2vh);
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+
+            li {
+                @include paragraph;
+                cursor: pointer;
+            }
+        }
+
+        .navigation {
+            flex-basis: 70%;
+
+            li {
+                flex-basis: 15%;
+            }
+        }
+
+
+        .social-media {
+            flex-basis: 5%;
+
+            li {
+                flex-basis: 33%;
+
+                a {
+                    text-decoration: none;
+                    color: $color-font-odd;
+                }
+            }
+        }
+    }
+
+
+}

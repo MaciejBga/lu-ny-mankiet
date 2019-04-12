@@ -1,0 +1,65 @@
+.info {
+    @include view-size;
+    color: $color-font-odd;
+    background-color: black;
+    z-index: 2;
+
+    .about {
+        width: 60%;
+        margin: 10vh auto;
+
+        h1 {
+            @include title;
+        }
+
+        p {
+            @include paragraph;
+        }
+    }
+
+    .plays {
+        h1 {
+            @include title;
+        }
+
+        .plays-container {
+            display: flex;
+            justify-content: space-around;
+
+            .plays-type {
+                margin-top: 5vh;
+                flex-basis: 25%;
+                border: 2px solid black;
+                background-image: url(/img/la_ronde.jpg);
+                background-size: cover;
+                box-shadow: 0 0 3px 3px white;
+                overflow: hidden;
+
+                h1 {
+                    background-color: rgba(0, 0, 0, .8);
+                }
+
+                p {
+                    @include paragraph;
+                    height: 30vh;
+                    padding: 10px;
+                    transform: translateY(50vh);
+                    transition: 0.3s;
+                }
+            }
+
+            .plays-type:nth-child(2) {
+                background-image: url(/img/heheszki.jpg)
+            }
+
+            .plays-type:nth-child(3) {
+                background-image: url(/img/dżem.jpg)
+            }
+
+            .plays-type:hover p {
+                background-color: rgba(0, 0, 0, .8);
+                transform: translateY(0vh);
+            }
+        }
+    }
+}

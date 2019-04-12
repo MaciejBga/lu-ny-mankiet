@@ -1,0 +1,30 @@
+.faq 
+    +view-size
+    color: $color-font-odd
+    background-color: black
+    z-index: 2
+    display: flex
+    justify-content: space-around
+    .faq-container
+        flex-basis: 30%
+        h1
+            +title 
+            margin-top: 10vh
+        ul
+            display: flex
+            flex-wrap: wrap
+            list-style: none
+            li
+                flex-basis: 100%
+                +paragraph
+                padding-top: 5%
+                border-bottom: 1px dotted white
+                p:nth-child(odd)
+                    font-weight: bold
+                    
+
+   
+               
+    
+
+    

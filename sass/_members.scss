@@ -1,0 +1,50 @@
+.members {
+    @include view-size;
+    color: $color-font-odd;
+    background-color: black;
+    z-index: 2;
+    overflow: hidden;
+
+    h1 {
+        @include title;
+        margin: 10vh 0;
+    }
+
+    .member-container {
+        margin: 5vh;
+        display: flex;
+
+
+        .member-photo {
+            flex-basis: 10%;
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 100%;
+                box-shadow: 0 0 3px 3px white;
+            }
+        }
+
+        .member-info {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin: 0
+            }
+
+            p {
+                padding: 2%;
+                @include paragraph;
+            }
+        }
+    }
+
+    .member-container:nth-child(3) {
+        justify-content: flex-end;
+
+    }
+}

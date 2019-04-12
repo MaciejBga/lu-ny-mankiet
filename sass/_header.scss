@@ -1,0 +1,23 @@
+header {
+    @include view-size;
+    position: sticky;
+    top: 0;
+    background-image: url(/img/header.jpg);
+    background-size: cover;
+    font-family: 'Cinzel', serif;
+    color: $color-font-odd;
+    z-index: 1;
+
+    h1 {
+        font-size: 3.5em;
+        font-weight: 900;
+        padding-top: 20%;
+        padding-left: 5%;
+
+    }
+
+    h2 {
+        font-weight: 700;
+        padding-left: 7%;
+    }
+}

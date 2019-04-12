@@ -1,0 +1,32 @@
+.gallery {
+    @include view-size;
+    color: $color-font-odd;
+    background-color: black;
+    z-index: 2;
+
+    h1 {
+        @include title;
+        margin: 10vh;
+    }
+
+    .gallery-grid {
+        width: 80%;
+        height: 70vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 33% 33% 33%;
+
+        a {
+            text-align: center;
+            margin: auto;
+            box-shadow: 0 0 3px 3px white;
+            overflow: hidden;
+
+            img {
+                transform: scale(1.06, 1.06)
+            }
+        }
+    }
+
+}

@@ -1,0 +1,102 @@
+footer {
+    height: 50vh;
+    width: 100vw;
+    z-index: 2;
+    color: $color-font-odd;
+    background-color: black;
+
+    h1 {
+        @include title;
+        margin: 5vh 0;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        height: calc(50vh-(5vh+47px));
+        width: 60%;
+        margin: 0 auto;
+
+        .member-photo {
+            flex-basis: 18%;
+            animation: shake 5s infinite;
+
+            img {
+                width: 100%;
+                box-shadow: 0 0 3px 3px white;
+            }
+        }
+
+        .member-photo:nth-of-type(2) {
+            animation-delay: 2.5s;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            li {
+                flex-basis: 100%;
+                text-align: center;
+                @include paragraph;
+                list-style: none;
+
+                a {
+                    color: blue
+                }
+            }
+        }
+
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    90% {
+        transform: translate(0, 0)
+    }
+
+    91% {
+        transform: translate(20px, 0)
+    }
+
+    92% {
+        transform: translate(20px, 20px)
+    }
+
+    93% {
+        transform: translate(0, 20px)
+    }
+
+    94% {
+        transform: translate(20px, 20px)
+    }
+
+    95% {
+        transform: translate(20px, 0)
+    }
+
+    96% {
+        transform: translate(20px, 20px)
+    }
+
+    97% {
+        transform: translate(0, 20px)
+    }
+
+    98% {
+        transform: translate(20px, 20px)
+    }
+
+    99% {
+        transform: translate(20px, 0)
+    }
+
+    100% {
+        transform: translate(0, 0)
+    }
+}
