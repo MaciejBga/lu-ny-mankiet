@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel:700,900&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -111,13 +111,6 @@
             <a href="gallery/11.jpg" data-lightbox="www"><img src="gallery/thumb11.jpg" alt="miniatura"></a>
             <a href="gallery/12.jpg" data-lightbox="www"><img src="gallery/thumb12.jpg" alt="miniatura"></a>
         </div>
-        <script src="src/jquery-3.2.1.min.js"></script>
-        <script src="dist/js/lightbox.js"></script>
-        <script>
-            lightbox.option({
-                'albumLabel': "Zdjęcie %1 z %2"
-            })
-        </script>
     </section>
     <section class="faq">
         <div class="faq-container">
@@ -179,6 +172,13 @@
             </div>
         </div>
     </footer>
+    <script src="src/jquery-3.2.1.min.js"></script>
+    <script src="dist/js/lightbox.js"></script>
+    <script>
+        lightbox.option({
+            'albumLabel': "Zdjęcie %1 z %2"
+        })
+    </script>
     <script src="/src/main.js"></script>
 </body>
 
