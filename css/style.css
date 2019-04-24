@@ -68,7 +68,7 @@ nav .nav-container .logo {
   -webkit-box-shadow: 0 0 1px 6px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 1px 6px rgba(0, 0, 0, 0.9);
   border-radius: 50%;
-  background-image: url(/img/logo.jpg);
+  background-image: url(images/logo.jpg);
   background-position: center;
   background-size: cover;
   -webkit-transform: translateY(-2vh);
