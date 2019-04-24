@@ -2,7 +2,7 @@ header {
     @include view-size;
     position: sticky;
     top: 0;
-    background-image: url(/img/header.jpg);
+    background-image: url('images/header.jpg');
     background-size: cover;
     font-family: 'Cinzel', serif;
     color: $color-font-odd;

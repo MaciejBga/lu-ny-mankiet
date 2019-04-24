@@ -30,7 +30,7 @@
                 margin-top: 5vh;
                 flex-basis: 25%;
                 border: 2px solid black;
-                background-image: url(/img/la_ronde.jpg);
+                background-image: url('images/la_ronde.jpg');
                 background-size: cover;
                 box-shadow: 0 0 3px 3px white;
                 overflow: hidden;
@@ -49,11 +49,11 @@
             }
 
             .plays-type:nth-child(2) {
-                background-image: url(/img/heheszki.jpg)
+                background-image: url('images/heheszki.jpg');
             }
 
             .plays-type:nth-child(3) {
-                background-image: url(/img/dżem.jpg)
+                background-image: url('images/dżem.jpg');
             }
 
             .plays-type:hover p {
