@@ -24,7 +24,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-image: url(images/header.jpg);
+  background-image: url(../images/header.jpg);
   background-size: cover;
   font-family: 'Cinzel', serif;
   color: white;
@@ -68,7 +68,7 @@ nav .nav-container .logo {
   -webkit-box-shadow: 0 0 1px 6px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 1px 6px rgba(0, 0, 0, 0.9);
   border-radius: 50%;
-  background-image: url(images/logo.jpg);
+  background-image: url(../images/logo.jpg);
   background-position: center;
   background-size: cover;
   -webkit-transform: translateY(-2vh);
@@ -166,7 +166,7 @@ nav .nav-container .social-media li a {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   border: 2px solid black;
-  background-image: url(images/la_ronde.jpg);
+  background-image: url(../images/la_ronde.jpg);
   background-size: cover;
   -webkit-box-shadow: 0 0 3px 3px white;
           box-shadow: 0 0 3px 3px white;
@@ -190,11 +190,11 @@ nav .nav-container .social-media li a {
 }
 
 .info .plays .plays-container .plays-type:nth-child(2) {
-  background-image: url(images/heheszki.jpg);
+  background-image: url(../images/heheszki.jpg);
 }
 
 .info .plays .plays-container .plays-type:nth-child(3) {
-  background-image: url(images/dżem.jpg);
+  background-image: url(../images/dżem.jpg);
 }
 
 .info .plays .plays-container .plays-type:hover p {
